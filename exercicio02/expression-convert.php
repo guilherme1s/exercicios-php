@@ -37,5 +37,4 @@ $convertedText = telephoneNumberConvertion($inputText, $map);
         <a href="index.html">Voltar</a>
     </section>
 </body>
-
 </html>
