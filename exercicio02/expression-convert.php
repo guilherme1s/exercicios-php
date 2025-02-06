@@ -21,14 +21,10 @@ function telephoneNumberConvertion($inputText, $map) {
 $convertedText = telephoneNumberConvertion($inputText, $map);
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversão de Texto para Telefone - Resultado</title>
-</head>
+<?php 
+$pageTitle = "Conversão de expressões pra números de telefone - Resultados";
+include __DIR__ . '/../inc/header.php';  
+?>
 
 <body>
     <section>

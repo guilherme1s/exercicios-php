@@ -43,14 +43,10 @@ if (isset($_GET['command'])) {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Gerenciamento de Indivíduos</title>
-</head>
+<?php 
+$pageTitle = "Sistema de Gerenciamento de Indivíduos";
+include __DIR__ . '/../inc/header.php';  
+?>
 
 <body>
     <h1>Sistema de Gerenciamento de Indivíduos</h1>

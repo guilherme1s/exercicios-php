@@ -31,13 +31,11 @@ $totalDiscounts = $ir + $inss + $sindicato;
 $netSalary = $grossSalary - $totalDiscounts;
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reajuste Salarial - Resultados</title>
-</head>
+<?php 
+$pageTitle = "Folha de pagamento - Resultados";
+include __DIR__ . '/../inc/header.php';  
+?>
+
 <body>
     <section>
         <h1>Resultado - Folha de Pagamento</h1>

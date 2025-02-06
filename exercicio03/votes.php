@@ -19,13 +19,11 @@ foreach ($votes as $row) {
 $maxVotes = max($voteCount);
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado da Votação</title>
-</head>
+<?php 
+$pageTitle = "Resultados da votação";
+include __DIR__ . '/../inc/header.php';  
+?>
+
 <body>
     <section>
         <p>O vencedor recebeu <strong><?= $maxVotes ?></strong> votos.</p>

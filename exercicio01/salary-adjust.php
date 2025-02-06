@@ -28,20 +28,16 @@ function adjustSalaryCalc($initialSalary) {
 }
 
 if ($initialSalary <= 0) {
-    exit("<p>Erro: Salário inválido. O valor precisa ser maior que 0.</p> <a href='index.html'>Voltar</a>");
+    exit("<p>Erro: Salário inválido. O valor precisa ser maior que 0.</p> <a href='index.php'>Voltar</a>");
 }
 
 $finalResult = adjustSalaryCalc($initialSalary);
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reajuste Salarial - Resultados</title>
-</head>
+<?php 
+$pageTitle = "Reajuste Salarial - Resultados";
+include __DIR__ . '/../inc/header.php';  
+?>
 
 <body>
     <section>
@@ -51,7 +47,7 @@ $finalResult = adjustSalaryCalc($initialSalary);
         <p>Valor do aumento: R$ <?= number_format($finalResult['increasedValue'], 2, ',', '.'); ?></p>
         <p>Seu salário reajustado é: R$ <?= number_format($finalResult['adjustedSalary'], 2, ',', '.'); ?></p>
         
-        <a href="index.html">Voltar</a>
+        <a href="index.php">Voltar</a>
     </section>
 </body>
 </html>
