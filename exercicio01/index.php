@@ -2,7 +2,6 @@
 $pageTitle = "Reajuste salarial";
 
 include __DIR__ . '/../inc/header.php'; 
-
 ?>
 
 <body>
