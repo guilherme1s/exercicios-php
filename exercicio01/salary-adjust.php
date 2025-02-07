@@ -17,14 +17,14 @@ include __DIR__ . '/../inc/header.php';
 ?>
 
 <body>
-    <section>
+    <section class="result-container">
         <h1>Resultado do Reajuste</h1>
         <p>Salário antes do reajuste: R$ <?= number_format($finalResult['initialSalary'], 2, ',', '.'); ?></p>
         <p>Percentual de aumento aplicado: <?= $finalResult['percent']; ?>%</p>
         <p>Valor do aumento: R$ <?= number_format($finalResult['increasedValue'], 2, ',', '.'); ?></p>
         <p>Seu salário reajustado é: R$ <?= number_format($finalResult['adjustedSalary'], 2, ',', '.'); ?></p>
         
-        <a href="index.php">Voltar</a>
+       <a href="index.php"> <button class="button">Voltar</button></a>
     </section>
 </body>
 </html>

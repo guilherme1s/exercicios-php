@@ -13,10 +13,12 @@ include __DIR__ . '/../inc/header.php';
 ?>
 
 <body>
-    <section>
-        <p><strong>Texto Original</strong>: <?php echo $inputText; ?></p>
-        <p><strong>Texto Convertido</strong>: <?php echo $convertedText; ?></p>
-        <a href="index.php">Voltar</a>
-    </section>
+    <main>
+        <section class="result-container">
+            <p><strong>Texto Original</strong>: <?php echo $inputText; ?></p>
+            <p><strong>Texto Convertido</strong>: <?php echo $convertedText; ?></p>
+            <a href="index.php"><button class="button">Voltar</button></a>
+        </section>
+    </main>
 </body>
 </html>

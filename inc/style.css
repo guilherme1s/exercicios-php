@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202024;
+    color: #e1e1e6;
+    font-size: 20px;
+    height: 100vh;
+}
+
+h1 {
+    color: #31C48D;
+    font-size: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 3.125rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 8px rgba(14, 13, 13, 0.3);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+.form label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form input {
+    background: #1e1e24;
+    color: #e1e1e6;
+    transition: border 0.3s;
+    border: 2px solid #31C48D;
+    outline: none;
+    font-size: 1.125rem;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.form input:focus {
+    border-color: #31C48D;
+}
+
+.button, .button-votes {
+    background: #31C48D;
+    border: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    color: #121214;
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1.125rem;
+    border-radius: 0.5rem;
+}
+
+.button-votes {
+    width: 50%;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 2.5rem;
+    border-radius: 0.75rem;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.result-container p {
+    color: #e1e1e6;
+    font-size: 1.25rem;
+}
+
+.result-container strong {
+    color: #31C48D;
+}
+
+table {
+    display: block; 
+    overflow-y: auto; 
+    overflow-x: auto; 
+    border-collapse: collapse;
+    background: #1e1e24;
+    max-width: 700px;
+    max-height: 400px; 
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 2px solid #31C48D;
+    text-align: center;
+    padding: 12px;
+}
+
+table th {
+    background-color: #1e1e24;
+    color: #31C48D;
+    font-size: 0.75rem;
+}
+
+table td {
+    background-color: #292c36;
+    color: #e1e1e6;
+    font-size: 1rem;
+}
+
+table td input {
+    cursor: pointer;
+    background-color: #31C48D;
+    border: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 0.25rem;
+}

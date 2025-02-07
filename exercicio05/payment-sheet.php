@@ -37,7 +37,7 @@ include __DIR__ . '/../inc/header.php';
 ?>
 
 <body>
-    <section>
+    <section class="result-container">
         <h1>Resultado - Folha de Pagamento</h1>
 
         <p><strong>Salário Bruto:</strong> R$ <?= number_format($grossSalary, 2, ',', '.') ?></p>
@@ -47,7 +47,7 @@ include __DIR__ . '/../inc/header.php';
         <p><strong>FGTS (11%):</strong> R$ <?= number_format($fgts, 2, ',', '.') ?></p>
         <p><strong>Total de Descontos:</strong> R$ <?= number_format($totalDiscounts, 2, ',', '.') ?></p>
         <p><strong>Salário Líquido:</strong> R$ <?= number_format($netSalary, 2, ',', '.') ?></p>
-        <a href="index.php">Voltar</a>
+        <a href="index.php"><button class="button">Voltar</button></a>
     </section>
 </body>
 </html>

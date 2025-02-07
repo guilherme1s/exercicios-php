@@ -43,22 +43,26 @@ if (isset($_GET['command'])) {
 }
 ?>
 
-<?php 
+<?php
 $pageTitle = "Sistema de Gerenciamento de Indivíduos";
-include __DIR__ . '/../inc/header.php';  
+include __DIR__ . '/../inc/header.php';
 ?>
 
 <body>
-    <h1>Sistema de Gerenciamento de Indivíduos</h1>
-    <form method="GET">
-        <label for="command">Digite um comando:</label>
-        <input type="text" id="command" name="command" required>
-        <button type="submit">Executar</button>
-    </form>
+    <main>
+        <section class="content-wrapper">
+            <h1>Sistema de Gerenciamento de Indivíduos</h1>
+            <form method="GET" class="form">
+                <label for="command">Digite um comando:</label>
+                <input type="text" id="command" name="command" required>
+                <button class="button" type="submit">Executar</button>
+            </form>
 
-    <div>
-        <?php echo $response; ?>
-    </div>
+            <div>
+                <?php echo $response; ?>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

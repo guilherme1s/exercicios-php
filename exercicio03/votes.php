@@ -25,9 +25,9 @@ include __DIR__ . '/../inc/header.php';
 ?>
 
 <body>
-    <section>
+    <section class="result-container">
         <p>O vencedor recebeu <strong><?= $maxVotes ?></strong> votos.</p>
-        <a href="index.php">Voltar</a>
+        <a href="index.php"><button class="button">Voltar</button></a>
     </section>
 </body>
 </html>
